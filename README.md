@@ -73,8 +73,12 @@ KryptNetwok is a decentralized application (DApp) that enables users to transfer
 
 3. **Deploy Contracts**
 
+   The smart contract is deployed on alchemy so create a wallet project on alchemy and paste the Alchemy api key in `hardhat.config.js`
+   Also generate the `private key` in your `MetaMask` account
+   The below command will deploy your smart contract to `alchemy`
+
    ```bash
-   npx hardhat run scripts/deploy.js --network sepolia
+   npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
    ```
 
 4. **Update Frontend Constants**
